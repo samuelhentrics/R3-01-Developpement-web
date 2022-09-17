@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
+    align-items: center;
+    background-color: #f8f8f8;
+    height:100vh;
+}
+
+#header-title{ 
+    grid-row:1;
+    grid-column: 1;
+    text-align:center;
+    padding-left:10px;
+    font-weight: bold;
+    color: #83819a;
+}
+
+nav, .nav-title{
+    text-align: center;
+    padding:10px;
+    padding-right:60px;
+    grid-row:1;
+    grid-column:2;
+}
+
+nav > ul{
+    list-style-type : none;
+}
+
+nav > ul > li{
+    display:inline;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    width:auto;
+}
+
+.main-title{
+    color:white;
+    text-shadow: 0px 0px 12px #000000;
+    background-image:url('https://dailygeekshow.com/wp-content/uploads/2016/06/Moraine-15.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    height:100%;
+    
+    text-align:center;
+    grid-row:2;
+    grid-column:1/3;
+    display:grid;
+    grid-template-rows:50% 50%;
+}
+
+.main-title > h1{
+    font-size:50px;
+    align-self:end;
+    align-self: center;
+}
+
+
+.main-title > p{
+    font-size:20px;
+    align-self:start;
+}
+
+article{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center; /* vertical */
+    justify-items: center; /* horizontal */
+    padding:10px;
+}
+
+article > section{
+    padding-right:20px;
+    padding-left:50px;
+}
+/* even*/
+
+
+article:nth-child(odd){
+    background-color:#F8F8F8;
+}
+
+article > section > img{
+    width:50%;
+    text-align:center;
+}
+
+.image{
+    text-align:center;
+}
+
+.contact{
+    background-image:url("./img/contact.jpg");
+    background-size:100%;
+    width:100%;
+    padding: 120px 0 120px 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 30% 20%;
+}
+
+.contact >  span{
+    color: white;
+    font-weight:bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact > input{
+    border-radius:10px;
+    align-items: right;
+    padding-left:10px;
+    margin-right: 25px;
+}
+
+.contact > button{
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width:fit-content;
+    padding:10px;
+}
+
+footer{
+    background-color:#f8f8f8;
+    width:100%;
+}
+
+footer > p{
+    padding: 50px 70px 50px;
+}
