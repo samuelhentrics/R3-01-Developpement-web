@@ -9,5 +9,5 @@ de la 2ème année de BUT INFORMATIQUE (S3) à l'IUT de Bayonne et du Pays Basqu
 ## Informations
 - Les cours, sujet de TD/TP ou encore les maquettes ne sont en aucun cas la propriété de l'auteur de ce dépot github.
 
-## [Auteur(s)](#)
+## Auteur(s)
  - Samuel HENTRICS LOISTINE
