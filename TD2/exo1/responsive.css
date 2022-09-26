@@ -13,6 +13,12 @@ header{
     height:100vh;
 }
 
+li>a{
+    color:#83819a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 #header-title{ 
     grid-row:1;
     grid-column: 1;

@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    text-align:center;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+h1{
+    font-size:40px;
+    padding:10px;
+    color: white;
+}
+
+h2{
+    font-weight: normal;
+    padding:10px;
+}
+
+h3{
+    font-weight: normal;
+    font-size:20px;
+}
+
+hr{
+    background-color:#458CFF;
+    border:none;
+    width:40px;
+    height: 2px;
+    margin: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+p{
+    font-size:15px;
+    padding:20px;
+}
+
+button{
+    border:none;
+    border-radius:40px;
+    padding:15px 25px 15px 25px;
+    font-weight: bold;
+    margin:20px;
+}
+
+header {
+    background-image: url("img/header.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 10% 80%;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+#header-title {
+    font-weight: bold;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+nav {
+    padding: 10px;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+nav>ul {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    display: inline;
+    margin: 10px;
+    width: auto;
+}
+
+nav>ul>li>a{
+    color:white;
+    font-weight: bold;
+}
+
+nav>ul>li>a:hover{
+    color:#ececec;
+}
+
+header>section{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row:3;
+    border-top: solid;
+    height:100%;
+}
+
+.main-title{
+    grid-row:2;
+    grid-column: 1;
+}
+
+.main-title>p{
+    color:#C2BCC0;
+}
+
+.main-title>button{
+    background-color: #458CFF;
+    color:white;
+}
+
+.main-title>button:hover{
+    background-color: #458CFF;
+}
+
+main>section{
+    padding:75px 0 75px 0;
+}
+
+#a-propos{
+    background-color:#458CFF;
+    color:white;
+}
+
+#a-propos>hr{
+    background-color: white;
+}
+
+#a-propos>button{
+    background-color: white;
+}
+
+#a-propos>button:hover{
+    background-color: #f3f3f3;
+}
+
+#a-propos>button>a{
+    color: black;
+}
+
+#competences{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+#competences>article>i{
+    font-size:40px;
+    padding:10px;
+    color:#458CFF;
+}
+
+#competences>article>p{
+    color:#777777;
+}
+
+#portfolio{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    padding:0;
+}
+
+#portfolio>article>img{
+    width:100%;
+    height: 100%;
+}
+
+#contact{
+    display:grid;
+    grid-template-rows:repeat(4, auto);
+}
+
+#contact>article{
+    padding:10px;
+}
+
+#contact>article>p{
+    padding:10px;
+}
+
+#contact>article>i{
+    font-size:30px;
+}
+
+#contact>article>p>a{
+    color: #458CFF;
+}
+
+
+
+@media screen and (min-width:768px) {
+    
+    a{
+        text-decoration:none;
+        color:white;
+    }
+    
+    h1{
+        font-size:60px;
+        padding:10px;
+        color: white;
+    }
+    
+    h2{
+        font-weight: normal;
+        padding:10px;
+    }
+    
+    h3{
+        font-weight: normal;
+        font-size:20px;
+    }
+    
+    hr{
+        background-color:#458CFF;
+        border:none;
+        width:40px;
+        height: 2px;
+        margin: auto;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    
+    p{
+        font-size:15px;
+        padding:20px;
+    }
+    
+    button{
+        border:none;
+        border-radius:40px;
+        padding:15px 25px 15px 25px;
+        font-weight: bold;
+        margin:20px;
+    }
+    
+    header {
+        background-image: url("img/header.png");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center center;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 8% 92%;
+        align-items: center;
+        height: 100vh;
+        color: white;
+    }
+    
+    #header-title {
+        text-align: left;
+        padding: 15px;
+        font-weight: bold;
+        grid-column: 1;
+        grid-row: 1;
+        background-color:#458CFF;
+        opacity: 0.6;
+    }
+    
+    nav {
+        padding: 15px;
+        padding-right: 15px;
+        grid-row: 1;
+        grid-column: 2;
+        background-color: #458CFF;
+        opacity: 0.6;
+    }
+    
+    nav>ul {
+        list-style-type: none;
+
+    }
+    
+    nav>ul>li {
+        display: inline;
+        margin: 10px;
+        width: auto;
+    }
+    
+    nav>ul>li>a{
+        color:white;
+        font-weight: bold;
+    }
+    
+    nav>ul>li>a:hover{
+        color:#ececec;
+    }
+    
+    header>section{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column: 1/3;
+        grid-row:2;
+        border-top: solid;
+        height:100%;
+    }
+    
+    .main-title{
+        grid-row:2;
+        grid-column: 1;
+    }
+    
+    .main-title>p{
+        color:white;
+    }
+    
+    .main-title>button{
+        background-color: #458CFF;
+        color:white;
+    }
+    
+    .main-title>button:hover{
+        background-color: #3783ff;
+    }
+    
+    main>section{
+        padding:75px 0 75px 0;
+    }
+    
+    #a-propos{
+        background-color:#458CFF;
+        color:white;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    
+    #a-propos>hr{
+        background-color: white;
+    }
+    
+    #competences{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,auto);
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    #competences>article:first-child{
+        grid-column: 1/5;
+        grid-row:1;
+        padding-bottom:20px;
+    }
+    
+    #competences>article{
+        grid-row:2;
+        padding: 0 20px 0 20px;
+    }
+    
+    #competences>article>i{
+        font-size:40px;
+        padding:10px;
+        color:#458CFF;
+    }
+    
+    #competences>article>p{
+        color:#777777;
+    }
+    
+    #portfolio{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,auto);
+        padding:0;
+    }
+    
+    #portfolio>article>img{
+        width:100%;
+        height: 100%;
+    }
+    
+    #contact{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(2, auto);
+        padding-left:25%;
+        padding-right:25%;
+    }
+    
+    #contact>article:first-child{
+        grid-row:1;
+        grid-column:1/3;
+    }
+    
+    #contact>article>p{
+        padding:10px;
+    }
+    
+    #contact>article>i{
+        font-size:30px;
+    }
+    
+    #contact>article>p>a{
+        color: #458CFF;
+    }
+     
+}

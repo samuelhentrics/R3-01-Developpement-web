@@ -8,15 +8,15 @@
     <title>Voyage au bout du monde</title>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <p id="header-title">Voyage au bout du monde</p>
-        <nav id="navigation" class="nav-title">
+        <nav role="navigation" aria-label="menu principal" id="navigation" class="nav-title" >
             <ul>
                 <li>
-                    <a href="index.html">Accueil</a>
+                    <a aria-current="page" href="index.html">Accueil</a>
                 </li>
                 <li>
-                    <a href="destinations.html">Destinations</a>
+                    <a aria-label="Destinations de rêve proposées notre agence" href="destinations.html">Destinations</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -28,7 +28,7 @@
             <p id="descriptionHeader">Découvrez les plus beaux endroits de la planète à travers les yeux de nos photographes</p>
         </section>
     </header>
-    <main>
+    <main role="main">
         <article>
             <section>
                 <h2>Texte en faux latin</h2>
@@ -38,13 +38,14 @@
                     et surtout l'attention du client n'est pas dérangée par le contenu, il demeure concentré seulement sur l'aspect graphique.</p>
             </section>
             <section class="image">
-                <img src="https://www.pierre-thiaville.fr/wp-content/uploads/2017/05/15.6263_lac-du-crozet-massif-de-belledonne-isere.jpg">
+                <img alt="Photo d'une montagne 1" src="https://www.pierre-thiaville.fr/wp-content/uploads/2017/05/15.6263_lac-du-crozet-massif-de-belledonne-isere.jpg">
             </section>
         </article>
         <article>
-            <section class="image"><img src="https://www.pierre-thiaville.fr/wp-content/uploads/2017/05/15.6263_lac-du-crozet-massif-de-belledonne-isere.jpg"></section>
+            <section class="image">
+                <img alt="Photo d'une montagne 2" src="https://www.pierre-thiaville.fr/wp-content/uploads/2017/05/15.6263_lac-du-crozet-massif-de-belledonne-isere.jpg"></section>
             <section>
-                <h2>Notre super destination n by PSDCovers</h2>
+                <h2>Notre super destination n <span lang="en">by PSDCovers</span></h2>
                 <p>Ce texte a pour autre avantage d'utiliser des mots de longueur variable, essayant de simuler une occupation normale.<br>
                 La méthode simpliste consistant à copier-coller un court texte plusieurs fois ("ceci est un faux texte ceci est un faux texte ceci
                  est un faux texte ceci est un faux texte ceci est un faux texte ") a l'inconvénient de ne pas permettre une juste appréciation
@@ -57,17 +58,17 @@
                 <p>Destination 1, ceci est notre superbe première publication.</p>
             </section>
             <section class="image">
-                <img src="https://www.pierre-thiaville.fr/wp-content/uploads/2017/05/15.6263_lac-du-crozet-massif-de-belledonne-isere.jpg">
+                <img alt="Photo d'une montagne 3" src="https://www.pierre-thiaville.fr/wp-content/uploads/2017/05/15.6263_lac-du-crozet-massif-de-belledonne-isere.jpg">
             </section>
         </article>
         <form class="contact">
             <span>Envoyez nous un mail</span>
-            <input type="email" name="email" id="email" placeholder="Saisissez votre email"/>
+            <input type="email" name="email" id="email" title="votre email pour envoyer un mail" aria-label="votre email pour envoyer un mail" placeholder="Saisissez votre email"/>
             <button type="submit">Envoyer</button>
         </form>
     </main>
-    <footer>
-        <p>Copyright © Voyage au bout du monde 2017. All Rights Reserved</p>
+    <footer role="contentinfo">
+        <p aria-hidden="true">Copyright © Voyage au bout du monde 2017. All Rights Reserved</p>
     </footer>
 </body>
 </html>
