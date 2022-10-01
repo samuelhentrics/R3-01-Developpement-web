@@ -47,10 +47,11 @@ button{
     padding:15px 25px 15px 25px;
     font-weight: bold;
     margin:20px;
+    cursor:pointer;
 }
 
 header {
-    background-image: url("img/header.png");
+    background-image: linear-gradient(#7eb5df, #4fb5d4,#3A9DBB,#3A9DBB, #458CFF);
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center center;
@@ -111,12 +112,12 @@ header>section{
     color:#C2BCC0;
 }
 
-.main-title>button{
+.main-title>a>button{
     background-color: #458CFF;
     color:white;
 }
 
-.main-title>button:hover{
+.main-title>a>button:hover{
     background-color: #458CFF;
 }
 
@@ -133,15 +134,15 @@ main>section{
     background-color: white;
 }
 
-#a-propos>button{
+#a-propos>a>button{
     background-color: white;
 }
 
-#a-propos>button:hover{
+#a-propos>a>button:hover{
     background-color: #f3f3f3;
 }
 
-#a-propos>button>a{
+#a-propos>a>button{
     color: black;
 }
 
@@ -168,7 +169,7 @@ main>section{
     padding:0;
 }
 
-#portfolio>article>img{
+#portfolio>article>a>img{
     width:100%;
     height: 100%;
 }
@@ -243,7 +244,7 @@ main>section{
     }
     
     header {
-        background-image: url("img/header.png");
+        background-image: linear-gradient(#7eb5df, #4fb5d4,#3A9DBB,#3A9DBB, #458CFF);
         background-size:cover;
         background-repeat: no-repeat;
         background-position:center center;
@@ -261,8 +262,6 @@ main>section{
         font-weight: bold;
         grid-column: 1;
         grid-row: 1;
-        background-color:#458CFF;
-        opacity: 0.6;
     }
     
     nav {
@@ -270,8 +269,6 @@ main>section{
         padding-right: 15px;
         grid-row: 1;
         grid-column: 2;
-        background-color: #458CFF;
-        opacity: 0.6;
     }
     
     nav>ul {
@@ -313,12 +310,12 @@ main>section{
         color:white;
     }
     
-    .main-title>button{
+    .main-title>a>button{
         background-color: #458CFF;
         color:white;
     }
     
-    .main-title>button:hover{
+    .main-title>a>button:hover{
         background-color: #3783ff;
     }
     
@@ -373,7 +370,7 @@ main>section{
         padding:0;
     }
     
-    #portfolio>article>img{
+    #portfolio>article>a>img{
         width:100%;
         height: 100%;
     }
