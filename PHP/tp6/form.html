@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>EssayeAjax</title>
+    <script type="text/javascript">
+        function writediv(texte) {
+            document.getElementById('zonetraitement').innerHTML = texte;
+        }
+        function verificationville(ville) {
+            if (window.ActiveXObject) // IE
+                xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+            else
+                if (window.XMLHttpRequest) // FIREFOX
+                    xhr_object = new XMLHttpRequest();
+            fichier = "http://iparla.iutbayonne.univ-pau.fr/~roose/ajax/BDAjax.php?ville=" + ville;
+            xhr_object.open("GET", fichier, false);
+            xhr_object.send(null);
+            if (xhr_object.readyState == 4) {
+                texte = xhr_object.responseText;
+            }
+            if (texte != '') {
+                if (texte == "occupe") {
+                    writediv(ville + ' : est un Nom de ville est occup&eacute; !');
+                }
+                else if (texte == "libre") {
+                    writediv(ville + ' : est un nom de ville libre vous pouvez l\'ajouter a la BD');
+                }
+            }
+            else
+                writediv(texte);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="formville" action="" methode="GET">
+        <input name="ville" type="text" onKeyUp="verificationville(this.value)">
+        <!-- onKeyUp : c est un evenement lance la fonction js 'verificationville'
+    this.value : ce qui est tapé ds la zone de texte, ici alias de ville (nom d'onglet)
+    - 51 -
+    -->
+        <div id="zonetraitement"></div>
+    </form>
+</body>
+
+</html>
